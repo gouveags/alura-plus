@@ -1,0 +1,151 @@
+:root {
+  --main-white: #FFFFFF;
+  --secondary-grey: #C0C0C0;
+  --blue-button: #167BF7;
+  --background-color: #00030C;
+  --main-font: 'Inter', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--main-white);
+  font-family: var(--main-font);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.primary {
+  background-image: url("../assets/Background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.container__box {
+  margin: 0 6rem;
+}
+
+.container__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.container__image {
+  margin: 1rem 0 2rem 0;
+}
+
+.container__button {
+  background-color: var(--blue-button);
+  border-radius: 5px;
+  padding: 1rem;
+  color: var(--main-white);
+  display: block;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.button_secondary {
+  background-color: transparent;
+  border: 0.15rem solid var(--main-white);
+}
+
+.container__warning {
+  font-size: 0.75rem;
+  color: var(--secondary-grey);
+}
+
+.secondary {
+  align-items: center;
+  margin: 0 10rem;
+}
+
+.secondary__image {
+  width: 80%;
+}
+
+.description__title {
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--main-white);
+}
+
+.description__text {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--secondary-grey);
+}
+
+.secondary_button {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.container__description {
+  padding: 2rem;
+}
+
+.devices{
+  text-align: center;
+}
+
+.devices__title{
+  color: var(--main-white);
+  font-size: 3rem;
+}
+
+.devices__list{
+  display: flex;
+  justify-content: center; 
+  list-style-type: none;
+  margin: 5rem 0;
+}
+
+.lista__item{
+  font-size: 2rem;
+  color: var(--main-white);
+}
+
+.footer{
+  text-align: center;
+  margin: 9rem 0 6rem 0;
+}
+
+.footer__list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  gap: 1rem;
+  list-style-type: none;
+  margin: 1rem 0;
+}
+
+.link{
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+.footer__text{
+  margin: 1rem 0;
+  color: var(--secondary-grey);
+  font-size: 0.9rem;
+}
+
+.link:hover{
+  color: var(--blue-button);
+}
+
+.link:active{
+  color: var(--secondary-grey);
+}
